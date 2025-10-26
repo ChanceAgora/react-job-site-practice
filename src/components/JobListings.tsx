@@ -2,7 +2,7 @@ import jobs from "../jobs.json";
 import JobListing from "./JobListing.tsx";
 
 function JobListings() {
-  console.log(jobs.jobs);
+  const RecentJobs = jobs.jobs.slice(0, 3);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
@@ -11,7 +11,7 @@ function JobListings() {
           Browse Jobs
         </h2>
 
-        { jobs.jobs.map((job) => {
+        { RecentJobs.map((job) => {
           return (
             <JobListing key={job.id} job={ job } />
           )
