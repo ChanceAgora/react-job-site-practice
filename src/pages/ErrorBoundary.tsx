@@ -1,6 +1,10 @@
+import { Link } from 'react';
+
 function ErrorBoundary() {
   return (
-    <h1 className='text-[50px]'>ERROR</h1>
+    <div className='h-screen flex justify-center items-center'>
+      <h1 className='text-5xl bold'>SORRY, PAGE NOT FOUND</h1>
+    </div>
   );
 }
 
