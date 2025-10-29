@@ -5,6 +5,7 @@ import { createBrowserRouter,
        } from 'react-router-dom';
 import NavBar from './components/NavBar.tsx';
 import HomePage from './pages/HomePage.tsx';
+import ErrorBoundary from './pages/ErrorBoundary.tsx';
 
 const Root = () => {
   return (
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: '*', element: <ErrorBoundary /> },
   ]},
 ]);
 
