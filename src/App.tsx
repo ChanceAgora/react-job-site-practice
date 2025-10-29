@@ -1,8 +1,8 @@
 import { createBrowserRouter,
-         createRoutesFromElements,
-         RouterProvider,
-         Outlet,
-       } from 'react-router-dom';
+          createRoutesFromElements,
+          RouterProvider,
+          Outlet,
+      } from 'react-router-dom';
 import NavBar from './components/NavBar.tsx';
 import HomePage from './pages/HomePage.tsx';
 import ErrorBoundary from './pages/ErrorBoundary.tsx';
